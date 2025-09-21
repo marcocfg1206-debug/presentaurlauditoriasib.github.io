@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación SIB Guatemala</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, #007AFF, #5AC8FA, #34C759, #30D158, #FFD60A, #FF9500, #FF453A, #FF2D55, #AF52DE, #5E5CE6, #3A46D4, #007AFF);
+            background-size: 400% 400%;
+            animation: colorChange 60s linear infinite;
+        }
+
+        @keyframes colorChange {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .slide {
+            height: 100vh;
+            width: 100vw;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+        
+        .glass-container {
+            backdrop-filter: blur(15px) saturate(200%);
+            background-color: rgba(255, 255, 255, 0.65);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 40px;
+            box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.15);
+            max-width: 90%;
+            width: auto;
+            max-height: 85vh;
+            overflow-y: auto;
+            margin: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3 { font-weight: 600; }
+        h1 { font-size: 3.2em; }
+        h2 { font-size: 2.2em; }
+        h3 { font-size: 1.7em; }
+        p, li { font-size: 1.1em; line-height: 1.6; }
+
+        ul { list-style: none; padding-left: 0; }
+
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .nav-button {
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            color: white;
+            font-size: 1.3em;
+            padding: 12px 25px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-button:hover {
+            background-color: rgba(255, 255, 255, 0.35);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide active">
+        <div class="glass-container">
+            <h1>La SIB: Guardián de la Estabilidad Financiera</h1>
+            <h2>Marco Legal, Funciones y su Impacto en Guatemala</h2>
+            <p><strong>Grupo Número 3</strong></p>
+            <p><strong>Estudiantes de Auditoria Décimo Semestre</strong></p>
+            <p><strong>Universidad Regional</strong></p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>¿Qué es la SIB?</h3>
+            <h2>Un ente técnico y autónomo</h2>
+            <ul>
+                <li>La Superintendencia de Bancos (SIB) es una institución técnica y descentralizada del Estado.</li>
+                <li>Actúa como el principal órgano supervisor y regulador del sistema financiero guatemalteco.</li>
+                <li>Su labor es proteger los intereses del público y contribuir al desarrollo económico del país.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>Raíces Legales</h3>
+            <h2>Marco Legal e Histórico</h2>
+            <ul>
+                <li>La SIB fue establecida en 1946 a través del Decreto Número 315.</li>
+                <li>La Ley de Bancos y Grupos Financieros (Decreto 19-2002) modernizó la supervisión financiera.</li>
+                <li><strong>Contexto:</strong> La autonomía de la SIB se extiende del Banco de Guatemala (BANGUAT), según el Artículo 132 de la Constitución Política.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>¿Quiénes son?</h3>
+            <h2>Misión, Visión y Valores</h2>
+            <ul>
+                <li><strong>Misión:</strong> Supervisar el sistema financiero con apego a la ley, de forma técnica y eficiente, para proteger al público y promover la estabilidad.</li>
+                <li><strong>Visión:</strong> Ser reconocida internacionalmente por su solidez, innovación y transparencia.</li>
+                <li><strong>Valores:</strong> Integridad, Excelencia Técnica, Transparencia, Eficiencia, Independencia y Responsabilidad.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>Tres Pilares</h3>
+            <h2>Las Funciones Principales de la SIB</h2>
+            <ul>
+                <li><strong>Supervisión:</strong> Vigilar la solvencia y gestión de las entidades.</li>
+                <li><strong>Regulación:</strong> Crear las normas que deben seguir las instituciones.</li>
+                <li><strong>Control:</strong> Inspeccionar y sancionar a las entidades.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>Supervisión Consolidada</h3>
+            <h2>Velando por la Salud Financiera</h2>
+            <ul>
+                <li>La SIB supervisa a los conglomerados financieros de forma global.</li>
+                <li>Analiza la solvencia patrimonial (como el cumplimiento de Basilea III) y la liquidez.</li>
+                <li>Evalúa y controla los riesgos (crédito, mercado, etc.).</li>
+                <li>Supervisa el gobierno corporativo para asegurar una gestión sana y transparente.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>El Marco de las Reglas</h3>
+            <h2>Estableciendo los Estándares</h2>
+            <ul>
+                <li>La SIB emite normas de cumplimiento obligatorio para las entidades supervisadas (circulares y acuerdos).</li>
+                <li>Estas normas buscan establecer requisitos de prudencia y definir políticas de contabilidad.</li>
+                <li>Regulan los productos y servicios financieros.</li>
+                <li>Tienen como objetivo prevenir el Lavado de Dinero y el Financiamiento del Terrorismo (ALD/FT).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>Fiscalización y Sanciones</h3>
+            <h2>Asegurando el Cumplimiento</h2>
+            <ul>
+                <li>La SIB tiene la facultad de realizar inspecciones en persona (in situ) o a distancia (off-site).</li>
+                <li>Puede solicitar cualquier información o documentación necesaria.</li>
+                <li>Tiene la potestad de imponer sanciones administrativas (multas) por incumplimiento de la ley.</li>
+                <li>Puede intervenir o liquidar entidades en casos necesarios para proteger a los ahorrantes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>El Equipo</h3>
+            <h2>Cómo se Organiza la SIB</h2>
+            <ul>
+                <li>La SIB es dirigida por el Superintendente de Bancos, nombrado por el Presidente de la República.</li>
+                <li>Su estructura incluye diversas direcciones técnicas especializadas, como la Dirección de Supervisión de Bancos, la Intendencia de Prevención de LD/FT, entre otras.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>Impacto en el País</h3>
+            <h2>Pilar de la Estabilidad Económica</h2>
+            <ul>
+                <li><strong>Protección al Público:</strong> Garantiza que los ahorros estén en instituciones sólidas, generando confianza.</li>
+                <li><strong>Prevención de Crisis:</strong> La supervisión constante detecta problemas a tiempo, previniendo crisis sistémicas.</li>
+                <li><strong>Promoción de Inversión:</strong> Un sistema financiero estable atrae inversión nacional y extranjera.</li>
+                <li><strong>Lucha contra Delitos:</strong> Su trabajo en la prevención del Lavado de Dinero protege al sistema de actividades ilícitas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h3>En Síntesis</h3>
+            <h2>Conclusiones Clave</h2>
+            <ul>
+                <li>La SIB es una institución fundamental para la solvencia del sistema financiero nacional.</li>
+                <li>Sus funciones de supervisión, regulación y control protegen a los usuarios y crean un entorno de confianza para el desarrollo económico.</li>
+                <li>Su evolución constante y adaptación a los estándares globales garantizan un sistema financiero moderno y resiliente.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="glass-container">
+            <h2>¡Gracias!</h2>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <button id="prevBtn" class="nav-button">Anterior</button>
+        <button id="nextBtn" class="nav-button">Siguiente</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            updateButtons();
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function updateButtons() {
+            prevBtn.disabled = (currentSlide === 0);
+            nextBtn.disabled = (currentSlide === slides.length - 1);
+        }
+
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+
+        showSlide(0);
+    </script>
+</body>
+</html>
