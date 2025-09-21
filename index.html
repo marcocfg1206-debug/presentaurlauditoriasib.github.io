@@ -10,8 +10,8 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            /* Degradado de colores oscuros */
-            background: linear-gradient(135deg, #100a29, #1a0f3d, #2a1656, #3d2179, #4f2d96, #683ba2, #5a2e8c, #3f266e, #291a45, #1d1235);
+            /* Degradado de colores oscuros, con una paleta más refinada */
+            background: linear-gradient(135deg, #0f0c29, #301934, #661e5e, #8f2f6a, #c84c8a, #d463a8, #c464ac, #b258a1, #904c86, #5d3554);
             background-size: 400% 400%;
             animation: colorChange 60s linear infinite;
         }
@@ -55,6 +55,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            /* Animación de brillo lento */
+            animation: glowEffect 4s ease-in-out infinite;
+        }
+
+        @keyframes glowEffect {
+            0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2) inset; }
+            50% { box-shadow: 0 0 25px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3) inset; }
+            100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2) inset; }
         }
 
         h1, h2, h3 { font-weight: 600; }
